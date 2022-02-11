@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            Tera Room
+        </title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="tera.css">
+    </head>
+    <body>
+        <button id="logout" class="btn btn-primary" onclick="logout();"> Logout</button>
+            <center>
+                <br>
+                <br>
+                <h1 class="header" id="heading_one">
+                    Tera Chat
+                        <img id="tera_mail_logo" src="https://th.bing.com/th/id/OIP.lwvHiWb_hiREFnB9o6i_EwHaHa?w=210&h=210&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+                </h1>
+
+                <h3 class="color_white">
+
+                </h3>
+                <div class="form-group input_div_room_page">
+                    <label>#Addroom:</label>
+                    <input type="text" id="room_name" class="form-control" placeholder="#RoomName">
+                </div>
+                <button class="btn btn-success" onclick="addRoom()">Create Room</button>
+                <h3 class="color_white">#TRENDINGROOMS</h3>
+                <div id="output"></div>
+            </center>
+            <script src="tera_room.js"></script>
+    </body>
+</html>
