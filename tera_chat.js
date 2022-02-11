@@ -35,7 +35,7 @@ console.log(message_data);
 name = message_data['name'];
 message = message_data['message'];
 like = message_data['like'];
-name_with_tag = "<h4>"+name+"<img class='user_tick' id='myimgabc' src='https://www.bing.com/th?id=OIP.3U-q3cM2C4aak7bqg1y_CAHaHa&w=204&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2'></h4>";
+name_with_tag = "<h4>"+name+"<img class='user_tick'></h4>";
 message_with_tag = "<h4 class='message_h4'>"+message+"</h4>";
 like_button = "<button class='btn btn-primary' id="+firebase_message_id+" value="+like+" onclick='updateLike(this.id)'>";
 span_with_tag = "<span id='abcde'>Like: "+like+"</span></button><hr>";
